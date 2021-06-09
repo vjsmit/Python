@@ -1,1 +1,72 @@
+Integers: int (whole no. 3,100,500)
+Floating Point: float (Decimal point)
+strings: str ("Alphabets")
+    Str are ordered seq it means we can use indexing (single char) and slicing (slice of string)[start:stop:step] to grab subsections of the string.
+    \n and \t for new line & tab respectively
+    Str are immutable
+  Print formating with strings(interpolation):
+    to inject a variable into our string
+    1) .format mmethod:
+            'string here {} then also {}'.format('something1', 'something2')
+             Field widths and float precision: 'string here {value:width.precision f}'.format('value')
+    2) f-strings:
+              name:Smit
+              print(f"He said his name is {name}.")
+              print(f"He said his name is {name!r}")  !r to get str representation.
+              Where with the .format() method we  see {value:10.4f}, with f-strings this can become {value:{10}.{6}} 
+              Note that with f-strings, precision refers to the total number of digits, not just those following the decimal. 
+              Unfortunately, f-strings do not pad to the right of the decimal, even if precision allows it
+              Another way:
+                        print(f"My 10 character, four decimal number is:{num:10.4f}")
+              
+Lists: lst
+        Lists are ordered seq that can hold a variety of object types. Uses [] and , to separate objects.
+        Supports indexing an slicing.
+        It can be nested and also have variety of methods that can be called off of them.
+        Change of objects allowed in Lists.
+        Various methods are:
+            .append() , .pop()- to remove last object from list
+            .sort() , .reverse()
+            
+            
+Dictionaries: dict, Unordered key:value pairs. {"mykey":"value"}
+        Unordered mappings for storing objects.
+        We have key:value pair.
+        In Dict objects retrieved by key name. Unordered and cant be sorted.
+        In list objects retrieved by location. Ordered seqn can be indexed and sliced.
+        my_dict = {'key1':'value1', 'key2':'value2'}
+        my_dict['key1'] -----to retrieve value 
+        my_dict.keys() = to retrieve keys
+        my_dict.values() = to retrieve values 
+        my_dict.items()  = to retrieve items
+        
+Tuples: tup, (ordered immutable seqn of objects) (10,"hello",10.0)
+         Similar to lists with one key diff of immutabilty. Tuple obj doesnt support item assignment.
+         uses parenthesis: (1,2,3).
+         2 fn: count and index
+         
+Sets: set, unordered collection of unique objects: {"a","b"}
+          There can be only one representative of same object
+          
+          student_set = set(student_list)
+          print(student_set)
 
+          student_set2 = set(['A', 'F', 'N', 'F', 'G', 'A'])
+          print(student_set2)
+
+          print(student_set2.intersection(student_set))
+          print(student_set2.difference(student_set))
+          print(student_set2.union(student_set))
+         
+
+
+Booleans: bool, Logical value True or False
+
+Variables Rules:
+  cant start with a no.
+  No spaces bw name
+  cant use another specila symbol but _
+  lowercase generally
+  avaid using name that hv special meaning like int/float
+  
+Python uses dynamic typing means that we can re-assign variables to diff data types. Other languages are statically typed.
