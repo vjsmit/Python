@@ -33,6 +33,8 @@ Dictionaries: dict, Unordered key:value pairs. {"mykey":"value"}
         Unordered mappings for storing objects.
         We have key:value pair.
         In Dict objects retrieved by key name. Unordered and cant be sorted.
+        
+
         In list objects retrieved by location. Ordered seqn can be indexed and sliced.
         my_dict = {'key1':'value1', 'key2':'value2'}
         my_dict['key1'] -----to retrieve value 
@@ -62,11 +64,48 @@ Sets: set, unordered collection of unique objects: {"a","b"}
 
 Booleans: bool, Logical value True or False
 
-Variables Rules:
+*Variables Rules:
   cant start with a no.
   No spaces bw name
   cant use another specila symbol but _
   lowercase generally
   avaid using name that hv special meaning like int/float
   
-Python uses dynamic typing means that we can re-assign variables to diff data types. Other languages are statically typed.
+*Python uses dynamic typing means that we can re-assign variables to diff data types. Other languages are statically typed.
+
+Simple I/O
+%%writefile filename.txt
+contents to write
+myfile = open('filename.txt')
+pwd - print working directory
+myfile.read()
+myfile.seek(0)
+myfile.readlines()
+myfile.close()
+with open ('filename.txt') as variable_name:
+    contents = variable_name.read() ##Now no need to close the file
+contents
+
+read/wr/append the file
+*To read-
+with open ('filename.txt', mode='r') as variable_name:
+    print(variable_name.read())
+  
+*To append-
+with open('filename.txt', mode='a') as variable_name:
+    variable_name.write('\nNew line added')
+with open ('filename.txt', mode='r') as variable_name:
+    print(variable_name.read())
+    
+*To write(creating new file and adding contents there)-
+with open('newfilename.txt', mode='w') as variable_name:
+    variable_name.write('Creating file and adding this line')
+with open ('newfilename.txt', mode='r') as variable_name
+    print(variable_name.read())
+    
+    
+mode='r' is read only
+     'w' is write only (overwrites file or create new)
+     'a' is append only
+     'r+' is reading and writing
+     'w+' is writing and reading
