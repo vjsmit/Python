@@ -1,1 +1,19 @@
+###if/elif/else
 
+Syntax-
+if statement:
+  print('')
+ elif statement:
+  print('')
+ else
+  print('')
+  
+ **we can have as many elif statement as we want
+ 
+ ###For Loops
+ Many objects in python are iterable meaning we can iterate over every element in object
+ we can iterate over every char in string, every item in list, every key in a dictionary
+ Syntax-
+ my_iterable = [1,2,3]
+ for item_name in my_iterable:
+  print(item_name)
