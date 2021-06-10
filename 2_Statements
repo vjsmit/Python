@@ -65,4 +65,10 @@ else:
          
 4) In 
 5) Min/Max
-6)
+6) random library- Python comes off with built in library. There are tons of fn included in this library.
+    e.g. from random import shuffle (Here, we are importing shuffle from lib)
+         from random import gradint (To grab a random integer)
+7) input function- It always takes string as input
+
+###List Comprehension -------------------Doubt
+    Its a unique way to quickly create a list with python
