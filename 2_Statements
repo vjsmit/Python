@@ -17,3 +17,52 @@ if statement:
  my_iterable = [1,2,3]
  for item_name in my_iterable:
   print(item_name)
+
+**using for loop we can unpack tuples pair in list. 
+  e.g.
+  mylist = [(1,2),(3,4),(5,6)]
+  for item in mylist:
+    print(item)
+  ===============================
+  for a,b in mylist:
+    print(a)
+    print(b)
+**By default, when we iterate through a dictionary. We only iterate through the keys.
+  to get value we have to use variable_name.items():
+  e.g.
+  d = {'k1':1,'k2':2,'k3':3}
+  for item in d.items():
+      print(item)
+  for (key,value) in d.items():
+      print(key,value)
+      
+###While loop
+while loop will continue to execute a block of code while some condition remains true.
+e.g. while my pool is not full, keep filling my pool with water or while my dogs are still hungry, keep feeding my dogs.
+
+Syntax:
+while some_boolean_conditions:
+    #do something
+    
+combine with else statement-
+while some_boolean_conditions:
+    do something
+else:
+    do something different
+    
+**break- breaks out of the current closest enclosing loop.
+  continue-goes to the top of the closest enclosing loop.
+  pass- does nothing at all. when we dont want to execute for/while loop
+  
+**Useful Operators-
+1) Range- range(start,STOP,step)
+2)Enumerate- It will count index automatically in the form of tuples
+            word = 'abcde'
+            for letter in enumerate(word):
+                print(letter)
+3) Zip - zip together two lists
+         It will go and zip together as far as the list is the shortest
+         
+4) In 
+5) Min/Max
+6)
