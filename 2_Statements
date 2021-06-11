@@ -56,6 +56,10 @@ else:
   
 **Useful Operators-
 1) Range- range(start,STOP,step)
+      The range function allows us to quickly generate a list of integers
+      There are 3 parameters you can pass, a start, a stop, and a step size.
+      This is a generator fn. so to actually get a list out of it, we need to cast it to a list with list()
+      What is a generator? Its a special type of function that will generate information and not need to save it to memory.
 2)Enumerate- It will count index automatically in the form of tuples
             word = 'abcde'
             for letter in enumerate(word):
@@ -72,3 +76,5 @@ else:
 
 ###List Comprehension -------------------Doubt
     Its a unique way to quickly create a list with python
+    when using for loop along with .append() to create a list, List Comprehension is a good alternative
+    
