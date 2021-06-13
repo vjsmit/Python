@@ -1,0 +1,58 @@
+Methods:
+    Methods are essentially functions built into objects.
+    Methods are in the form:
+      object.method(arg1,arg2,etc...)
+    Methods for list are:
+      append
+      count: count the number of occurrences of an element in a list.
+      extend
+      insert
+      pop
+      remove
+      reverse
+      sort
+ Functions:
+    A function is a useful device that groups together a set of statements so they can be run more than once. 
+    They can also let us specify parameters that can serve as inputs to the functions.
+    functions allow us to not have to repeatedly write the same code again and again.
+    The function will allow you to call the same block of code without having to write it multiple times.
+Function Topics:
+    def keyword
+    simple example of a function
+    calling a function with ()
+    accepting parameters
+    print versus return
+    adding in logic inside a function
+    multiple returns inside a function
+    adding in loops inside a function
+    tuple unpacking
+    interactions between functions
+    
+
+def name_of_function(arg1,arg2):
+    '''
+    This is where the function's Document String (docstring) goes.
+    When you call help() on your function it will be printed out.
+    '''
+    # Do stuff here
+    # Return desired result
+    
+Using return
+   If we actually want to save the resulting variable we need to use the return keyword.
+   Return keyword we use to send back the result of the function instead of just printing it out.
+   return allows us to assign the output of the function to a new variable
+   
+   
+What is the difference between return and print?"
+  The return keyword allows us to actually save the result of the output of a function as a variable.
+  The print() function simply displays the output to you, but doesn't save it for future use.
+ 
+Empty placeholder list
+    Its very common at top of function call if we intend on returning something, and if we dont hv it defined as an argument then we define it up as some sort of place holder
+    
+Return all even numbers in a list
+    
+Returning Tuples for Unpacking
+
+Interactions between functions
+
