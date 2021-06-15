@@ -1,0 +1,15 @@
+Args & Kwargs.
+
+These are functional parameters.
+Arguments and KeyWord Arguments
+
+To accept an arbitrary number of arguments and keyword args without having to predefined a bunch of parameters in our function calls.
+
+we can pass the default parameters with value as 0. e.g. def my_func(a,b,c=0)
+
+def my_func(*args): -----(It will allow us to treat this as a tuple)
+ 
+**kwargs 
+Same way we can have arbitrary no. of key worded arguments.
+It will buids a dictionary of key value pairs.
+
