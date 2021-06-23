@@ -14,6 +14,11 @@ if statement:
  Many objects in python are iterable meaning we can iterate over every element in object
  we can iterate over every char in string, every item in list, every key in a dictionary
  Syntax-
+============================================ 
+ for item in object:
+    statements to do stuff
+============================================    
+    
  my_iterable = [1,2,3]
  for item_name in my_iterable:
   print(item_name)
