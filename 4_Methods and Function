@@ -75,3 +75,20 @@ map(square,my_nums)
 # To get the results, either iterate through map() 
 # or just cast to a list
 list(map(square,my_nums))
+
+Filter:
+It will filter based on the function's condition
+
+def check_even(num):
+    return num % 2 == 0
+nums = [0,1,2,3,4,5,6,7,8,9,10]
+list(filter(check_even,nums))
+[0, 2, 4, 6, 8, 10]
+
+lambda expression¶
+lambda expressions allow us to create "anonymous" functions. 
+This basically means we can quickly make ad-hoc functions without needing to properly define a function using def.
+since some functionality that we intend to use only 1 time boz of this we dont use any name nor use def keyword
+Instead of function name and def keyword we use lambda keyword
+we dont use return keyword also as by default it will return what is on other side of colon.
+e.g. square = lambda num: num**2
