@@ -92,3 +92,34 @@ since some functionality that we intend to use only 1 time boz of this we dont u
 Instead of function name and def keyword we use lambda keyword
 we dont use return keyword also as by default it will return what is on other side of colon.
 e.g. square = lambda num: num**2
+
+
+Nested Statements and Scope:
+When we create a variable name in Python the name is stored in a name-space.
+Variable names also have a scope, the scope determines the visibility of that variable name to other parts of your code.
+Python has a set of rules it follows to decide what variables we are referencing in our code. Lets break down the rules:
+1)Name assignments will create or change local names by default.
+2)Name references search (at most) four scopes, these are:
+  local
+  enclosing functions
+  global
+  built-in
+3)Names declared in global and nonlocal statements map assigned names to enclosing module and function scopes.
+
+LEGB Rule:
+
+L: Local — Names assigned in any way within a function (def or lambda), and not declared global in that function.
+
+E: Enclosing function locals — Names in the local scope of any and all enclosing functions (def or lambda), from inner to outer.
+
+G: Global (module) — Names assigned at the top-level of a module file, or declared global in a def within the file.
+
+B: Built-in (Python) — Names preassigned in the built-in names module : open, range, SyntaxError,...
+
+When we declare variables inside of a function definition, these variable names have a scope local to this function.
+For local reassignment, its scope wont be able to extend outside to another level.
+
+In case we want global variable to be changed to local variable:
+        Inside a function we declare global keyword and then x instead of passing it as a parameter.
+        Better option:
+        We should take it as a parameter. Do the reassignment and then return the reassignment.
