@@ -47,20 +47,6 @@ Tuples: tup, (ordered immutable seqn of objects) (10,"hello",10.0)
          uses parenthesis: (1,2,3).
          2 fn: count and index
          
-Sets: set, unordered collection of unique objects: {"a","b"}
-          There can be only one representative of same object
-          
-          student_set = set(student_list)
-          print(student_set)
-
-          student_set2 = set(['A', 'F', 'N', 'F', 'G', 'A'])
-          print(student_set2)
-
-          print(student_set2.intersection(student_set))
-          print(student_set2.difference(student_set))
-          print(student_set2.union(student_set))
-         
-
 
 Booleans: bool, Logical value True or False
 
