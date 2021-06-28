@@ -1,0 +1,71 @@
+Sets: set, unordered collection of unique objects: {"a","b"}
+          There can be only one representative of same object
+          
+          student_set = set(student_list)
+          print(student_set)
+
+          student_set2 = set(['A', 'F', 'N', 'F', 'G', 'A'])
+          print(student_set2)
+
+          print(student_set2.intersection(student_set))
+          print(student_set2.difference(student_set))
+          print(student_set2.union(student_set))
+         
+Set-Comparison Methods:
+
+.union() and .intersection()
+A union is a new set that contains elements from all original sets. This can be thought of as the sum of two or more sets.
+To create a union set, we simply use the .union() method from one set and supply a second set as the argument.
+a = {1,2,3}
+b = {3,4,5}
+c = a.union(b)
+print(c) # {1,2,3,4,5}
+
+An intersection is a new set that contains only the elements from a that are also present in b.
+Functionally, this includes the elements that overlap, or are in both sets.
+Intersection identifies the common elements—or overlap—between multiple sets
+
+a = {1,2,3}
+b = {3,4,5}
+c = a.intersection(b)
+print(c) # {3}
+
+.difference() and .symmetric_difference()
+Difference identifies the values that exist in a base set and not in another
+a = {1,2,3}
+b = {3,4,5}
+c = a.difference(b)
+print(c) # {1,2}
+
+a = {1,2,3}
+b = {3,4,5}
+c = b.difference(a)
+print(c) # {4,5}
+
+Symmetric difference identifies the unique elements across multiple sets
+.symmetric_difference(). Think of this as the union minus the intersection.
+
+a = {1,2,3}
+b = {3,4,5}
+c = a.symmetric_difference(b)
+print(c) # {1,2,4,5}
+
+.issubset() and .issuperset()
+To validate whether one set fully exists within another.
+Unlike the previous four methods, which returned new sets, the .issubset() and .issuperset() methods return boolean True or False values.
+A subset is a set that entirely exists within another.
+a = {1,2,3,4,5}
+b = {3,4,5}
+c = a.issubset(b) #Is a a subset of b?
+print(c) # False
+
+a = {1,2,3,4,5}
+b = {3,4,5}
+c = b.issubset(a)
+print(c) # True
+
+A superset is a set that includes every element (and potentially more) from another set
+a = {1,2,3,4,5}
+b = {3,4,5}
+c = a.issuperset(b)
+print(c) # True
