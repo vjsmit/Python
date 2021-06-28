@@ -123,3 +123,29 @@ In case we want global variable to be changed to local variable:
         Inside a function we declare global keyword and then x instead of passing it as a parameter.
         Better option:
         We should take it as a parameter. Do the reassignment and then return the reassignment.
+        
+        
+.isupper() & .islower() ---To check if the word starts with caps or small letter
+.replace('a','b') -------- To replace a with b
+
+Pangram:
+Pangrams are words or sentences containing every letter of the alphabet at least once.
+For example : "The quick brown fox jumps over the lazy dog"
+
+import string
+>>> string.ascii_lowercase
+'abcdefghijklmnopqrstuvwxyz'
+>>> list(string.ascii_lowercase) ---if we want in list
+
+>>> help(string) # on Python 3
+....
+DATA
+    ascii_letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    ascii_lowercase = 'abcdefghijklmnopqrstuvwxyz'
+    ascii_uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    digits = '0123456789'
+    hexdigits = '0123456789abcdefABCDEF'
+    octdigits = '01234567'
+    printable = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c'
+    punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+    whitespace = ' \t\n\r\x0b\x0c'
