@@ -1,0 +1,34 @@
+print(type(1))
+print(type([]))
+print(type(()))
+print(type({}))
+<class 'int'>
+<class 'list'>
+<class 'tuple'>
+<class 'dict'>
+So we know all these things are objects, so how can we create our own Object types? That is where the class keyword comes in.
+
+class
+User defined objects are created using the class keyword. The class is a blueprint that defines the nature of a future object. 
+From classes we can construct instances. An instance is a specific object created from a particular class.
+
+
+Inside of the class, we can define class attributes and methods.
+
+An attribute is a characteristic of an object. A method is an operation we can perform with the object.
+
+For example, we can create a class called Dog.
+An attribute of a dog may be its breed or its name, while a method of a dog may be defined by a .bark() method which returns a sound.
+
+Attributes
+The syntax for creating an attribute is:
+
+self.attribute = something
+
+There is a special method __init__(), This method is used to initialize the attributes of an object.
+
+Methods
+Methods are functions defined inside the body of a class.
+They are used to perform operations with the attributes of our objects.
+Methods are a key concept of the OOP paradigm. They are essential to dividing responsibilities in programming, especially in large applications
+
